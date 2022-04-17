@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             About
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Here is a more concise overview about myself.
+            Here is a more comprehensive overview about myself.
           </p>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">

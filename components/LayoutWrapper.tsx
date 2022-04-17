@@ -12,7 +12,7 @@ const LayoutWrapper = ({ children }: Props) => {
     <div className="bg-gray-50 dark:bg-gray-900">
       <SectionContainer>
         <Navbar />
-        <main className="mb-auto min-h-[100vh-88px]">{children}</main>
+        <main className="mb-auto min-h-[calc(100vh-88px-162px)]">{children}</main>
       </SectionContainer>
       <Footer />
     </div>
