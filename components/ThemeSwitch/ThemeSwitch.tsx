@@ -12,6 +12,7 @@ export const ThemeSwitch = () => {
   return (
     mounted && (
       <DarkModeSwitch
+        className="select-none"
         checked={theme === 'dark' || resolvedTheme === 'dark'}
         onChange={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
         size={26}

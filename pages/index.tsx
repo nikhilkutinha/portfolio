@@ -9,7 +9,7 @@ import Image from '@/components/Image'
 import Navbar from '@/components/Navbar'
 import { TerminalCommand, Project } from '@/types'
 import { Terminal } from '@/components/terminal'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getPlaiceholder } from 'plaiceholder'
 import { projectsData, terminalData } from '@/data'
 import { useTheme } from 'next-themes'
@@ -147,14 +147,14 @@ export const HeroSection = () => {
 
 export const TerminalSection = ({ commands }: TerminalSectionProps) => {
   const [animationComplete, setAnimationComplete] = useState(false)
-  const { theme } = useTheme()
+  const { resolvedTheme } = useTheme()
 
   return (
     <ParallaxBanner
       layers={[
         {
           image:
-            theme == 'light'
+            resolvedTheme == 'light'
               ? '/static/images/topography-light.svg'
               : '/static/images/topography-dark.svg',
           speed: -25,
