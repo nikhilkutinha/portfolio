@@ -9,7 +9,7 @@ import Image from '@/components/Image'
 import Navbar from '@/components/Navbar'
 import { TerminalCommand, Project } from '@/types'
 import { Terminal } from '@/components/terminal'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { getPlaiceholder } from 'plaiceholder'
 import { projectsData, terminalData } from '@/data'
 import { useTheme } from 'next-themes'
@@ -100,10 +100,11 @@ export const HeroSection = () => {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <Link
-                      href="https://drive.google.com/drive/folders/16xCrHA1YerelmaaTTBUYzNdvy3Vga9qc"
+                      target="_blank"
+                      href="/static/resume.pdf"
                       className="group flex w-full items-center justify-center rounded-md border border-transparent bg-primary-600 px-8 py-3 text-base font-medium text-white transition hover:bg-primary-700 md:text-lg"
                     >
-                      Download resume
+                      View resume
                       <span className="ml-2 inline-flex transition group-hover:translate-x-1">
                         ⟶
                       </span>
