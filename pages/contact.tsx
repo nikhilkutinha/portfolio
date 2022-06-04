@@ -22,23 +22,23 @@ export default function Projects() {
           <form action="" data-netlify>
             <div className="grid grid-cols-6 gap-6">
               <Field label="First name" className="col-span-6 sm:col-span-3">
-                <Input type="text" />
+                <Input name="first_name" type="text" />
               </Field>
 
               <Field label="Last name" className="col-span-6 sm:col-span-3">
-                <Input type="text" />
+                <Input name="last_name" type="text" />
               </Field>
 
               <Field label="Email" className="col-span-6">
-                <Input type="email" />
+                <Input name="email" type="email" />
               </Field>
 
               <Field label="Subject" className="col-span-6">
-                <Input type="text" />
+                <Input name="subject" type="text" />
               </Field>
 
               <Field label="Message" className="col-span-6">
-                <Textarea rows={6} />
+                <Textarea name="message" rows={6} />
               </Field>
             </div>
             <Button className="mt-6">Submit</Button>
