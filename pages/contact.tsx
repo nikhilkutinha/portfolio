@@ -19,7 +19,15 @@ export default function Projects() {
         </div>
 
         <div className="py-12">
-          <form action="" data-netlify>
+          <form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-form" />
+
+            <p className="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+
             <div className="grid grid-cols-6 gap-6">
               <Field label="First name" className="col-span-6 sm:col-span-3">
                 <Input name="first_name" type="text" />
@@ -41,7 +49,9 @@ export default function Projects() {
                 <Textarea name="message" rows={6} />
               </Field>
             </div>
-            <Button className="mt-6">Submit</Button>
+            <Button type="submit" className="mt-6">
+              Submit
+            </Button>
           </form>
         </div>
       </div>
